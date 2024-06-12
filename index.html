@@ -10,8 +10,13 @@
     <script src="https://kit.fontawesome.com/503d88ca7f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header id="intro">
-        <nav>
+    <header id="intro" onclick="clickButton()">
+        <section>
+            <button class="menu-button">
+                <div class="menu-icon"></div>
+            </button>
+        </section>
+        <nav id="btn">
             <ul>
                 <li class="active">
                     <a href="#" >HOME</a>
@@ -55,13 +60,13 @@
             <div class="about-profile">
                 <div id="about-profile-container">
                     <div class="about-profile-img">
-                        <img src="img/faceCard2.jpg" alt="Profile-Picture" height="300" width="400" loading="ease">
+                        <img src="img/facecard.jpeg" alt="Profile-Picture" height="800" width="800" loading="ease">
                     </div>
                     <div class="about-profile-text">
                         <p><span style="font-weight: bold;">Name:</span>&nbsp;Abdulmuiz Olamide Sulaiman</p>
-                        <p><span style="font-weight: bold;">Profile:</span> Front-end developer</p>
-                        <p><span style="font-weight: bold;">Email:</span> dsulaiman12300@gmail.com</p>
-                        <p><span style="font-weight: bold;">Phone:</span> 647-887-3234</p>
+                        <p style="margin-top: 3.2rem;"><span style="font-weight: bold;">Profile:</span> Front-end developer</p>
+                        <p style="margin-top: 3.2rem;"><span style="font-weight: bold;">Email:</span> dsulaiman12300@gmail.com</p>
+                        <p style="margin-top: 3.2rem;"><span style="font-weight: bold;">Phone:</span> 647-887-3234</p>
                     </div>
                 </div>
                 
@@ -85,9 +90,12 @@
             <div class="about-profile about-profile-txt">
                 <h2>About me</h2>
                 <div class="about-profile-txt-underline"></div>
-                <p id="intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ad qui tenetur ab accusantium eveniet consequuntur? Excepturi ea dolore impedit repudiandae, veritatis saepe omnis nisi modi, quam soluta, a culpa!</p><br>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, quibusdam voluptates consectetur molestiae, quasi esse delectus dolore ipsam maiores, quas corporis quo inventore id a rem asperiores cupiditate maxime? Quasi!</p><br>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum animi recusandae voluptate iusto, ab, doloribus expedita voluptas qui labore, corporis quibusdam odio dicta laboriosam cum incidunt a. Excepturi, nobis reiciendis.</p>
+                <p id="intro">I am a versatile, goal orientend, hardworking individual and driven to meet or exceed a company's expectations to deliver high-quality website designs with my skills. <br><br>
+                    An effective listener that can communicate technical information in an easily understandable way. <br><br>
+                    I am creative in problem-solving and have the ability to multi-task and priortize in a fast-paced stressful environment. I work well as part of team with people at all organizational levels and diverse background. 
+                    Equally successful working independently on time-sensitive projects.<br><br>
+                    I am a focused individual and result oriented creative, committed to becoming a software engineer but starting off as a front-end developer and I am open to learning of any form or level.
+                </p>
             </div>
             <!----   END OF ABOUT PROFILE SECTION    ---->
         </section>
@@ -105,7 +113,7 @@
                     <span class="links left">Email:</span><a href="mailto:">dsulaiman12300@gmail.com</a>
                 </P>
                 <p><span class="links">GITHUB:</span><a href="https://github.com/muizo" target="_blank" style="padding-right: 15px; border-right:2px solid rgb(240, 69, 12);">MYGITHUB</a>
-                    <span class="links left">LINKENDIN:</span> <a href="https://www.linkedin.com/in/abdulmuiz-sulaiman-b92b17212/" target="_blank">Abdulmuizlinkedin</a>
+                    <span class="links left left2">LINKENDIN: <a href="https://www.linkedin.com/in/abdulmuiz-sulaiman-b92b17212/" target="_blank">Abdulmuizlinkedin</a></span>
                 </p>
             </div>
 
@@ -126,7 +134,7 @@
                         <li>Sass</li>
                     </ul>
                 </div>
-                <div class="resume-box" style="border: none;" >
+                <div class="resume-box" style="border: none;">
                     <h2>TOOLS</h2>
                     <ul>
                         <li>Git</li>
@@ -134,16 +142,48 @@
                 </div>
             </div>
 
-            <div class="resume-header experience">
+            <div class="resume-header">
                 <h2>PROJECT EXPERIENCE</h2>
+                <ul style="margin-top: 1rem;">
+                    <li>Designed a School Website</li>
+                    <li>Designed an Academy Website</li>
+                    <li>Designed a Business Blog Website</li>
+                </ul>
             </div>
 
-            <div class="resume-header education"  style="margin-top: 20px;">
+            <div class="resume-header"  style="margin-top: 20px;">
                 <h2>EDUCATION BACKGROUND AND CERTIFICATION</h2>
+                <p style="padding-left: 1rem; margin-top: 1rem;"><b>B.Sc., Cell Biology and Genetics</b>, 2021</p>
+                <ul>
+                    <li>University of Lagos (2016 - 2021)</li>
+                </ul>
+                
+                <p style="padding-left: 1rem; margin-top: 1rem;"><b>Certificate of Return (General Secretary)</b>, Febraury 2020</p>
+
+                <p style="padding-left: 1rem; margin-top: 1rem;"><b>National Youth Service Corps (NYSC)</b>, Febraury 2023</p>
             </div>
 
-            <div class="resume-header Work-Experience"  style="margin-top: 20px;">
+            <div class="resume-header"  style="margin-top: 20px;">
                 <h2>Experience</h2>
+                <p style="padding-left: 1rem; margin-top: 1rem;"><b>Store Officer intern</b>, Presidents Paints Nigeria Limited, Febraury 2022 - Febraury 2023</p>
+                <ul>
+                    <li>
+                        Use of Microsoft Excel  to calculate the daily usage of raw materials.
+                    </li>
+                    <li>
+                        Use of Microsoft Excel to determine the shortage and excess of raw materials weekly.
+                    </li>
+                    <li>
+                        Use of input sheets to calculate the daily stock.
+                    </li>
+                </ul>
+
+                <p style="padding-left: 1rem; margin-top: 1rem;"><b>Leadership Experience</b>,Febraury 2020</p>
+                <ul>
+                    <li>
+                        General Secretary, Department of Cell Biology and Genetics
+                    </li>
+                </ul>
             </div>
         </section>
         <!----   END OF RESUME SECTION    ---->
@@ -152,7 +192,7 @@
         <!----   BEGINNING OF SERVICES SECTION    ---->
         <section id="services">
             <h2>SERVICES</h2>
-            <P style="text-align: center;">Lorem ipsum dolor sit amet</P>
+            <P style="text-align: center;">I offer different services</P>
             <div class="service_underline"></div>
             <div id="services-box-container">
                 <div class="services-box">
@@ -161,7 +201,7 @@
                     </div>
                     
                     <h4 style="text-align: center;">WEB DESIGN</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ratione doloremque aperiam, labore suscipit omnis porro sit quisquam delectus eum sint molestias eveniet harum! Corporis asperiores voluptatum sequi facilis optio.</p>
+                    <p>I design styslish and creative website effectively to your liking</p>
                 </div>
 
                 <div class="services-box">
@@ -170,7 +210,7 @@
                     </div>
 
                     <h4 style="text-align: center;">RESPONSIVE DESIGN</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ratione doloremque aperiam, labore suscipit omnis porro sit quisquam delectus eum sint molestias eveniet harum! Corporis asperiores voluptatum sequi facilis optio.</p>
+                    <p>I design styslish and creative responsive website effectively to your liking</p>
                 </div>
             </div>
 
@@ -204,7 +244,30 @@
 
         <!----   BEGINNING OF PROJECT SECTION    ---->
         <section id="work">
-            <h2 style="text-align: center;">PROJECTS</h2>
+            <h2>PROJECTS</h2>
+            <div class="project_underline"></div>
+
+            <div class="project-background">
+                <div class="project-container">
+                    <div class="project-item">
+                        <a href="#">
+                            <img src="img/schoolwebsite img.jpg" alt="School Website" height="200" width="200">
+                        </a>
+                    </div>
+
+                    <div class="project-item two">
+                        <a href="#">
+                            <img src="img/businessblog img.jpg" alt="School Website" height="200" width="200">
+                        </a>
+                    </div>
+
+                    <div class="project-item">
+                        <a href="#">
+                            <img src="img/Academy website image.jpg" alt="School Website" height="200" width="200">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
         <!----   END OF PROJECT SECTION    ---->
 
@@ -232,16 +295,17 @@
                     <div class="contact-form contact-text">
                         <h2>Get in Touch</h2>
                         <div class="contact-underline space2"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa praesentium similique impedit reprehenderit. Ad minus temporibus voluptatem corporis, recusandae voluptas iste mollitia, fugiat magnam maiores officia inventore quasi doloremque est!</p>
-                        <p style="margin-top: 15px;"><span></span><address> Kesley Court Oakville Ontario</address></p><!-- Location Icon in span -->
+                        <p>I am available to work with dedicated creatives from different part of the world irrespective of the gender or background. <br><br>
+                        We can do so much together and develop great ideas. Contact me and let's talk.</p>
+                        <p style="margin-top: 15px;"><span></span><address>144 Cookview Dr, Brampton</address></p><!-- Location Icon in span -->
                         <p><span></span> 647-887-3234</p><!-- Phone Icon in span-->
                         <p><span></span> dsulaiman12300@gmail.com</p><!-- Mail Icon in span-->
                     </div>
 
                     <div id="contact-icons">
-                        <a href=""><i class="fa-brands fa-instagram"></i></a> <!-- facebook Icon-->
-                        <a href=""><i class="fa-brands fa-x-twitter"></i></a> <!-- instagram Icon -->
-                        <a href=""><i class="fa-brands fa-linkedin"></i></a> <!-- twitter Icon-->
+                        <a href="https://www.instagram.com/abdulmuizolamide/" target="_blank"><i class="fa-brands fa-instagram"></i></a> <!-- facebook Icon-->
+                        <a href="https://www.twitter.com/olamide_muizzzz" target="_blank"><i class="fa-brands fa-x-twitter"></i></a> <!-- instagram Icon -->
+                        <a href="https://www.linkedin.com/in/abdulmuiz-sulaiman-b92b17212/" target="_blank"><i class="fa-brands fa-linkedin"></i></a> <!-- twitter Icon-->
                     </div>
                 </div>
             </div>
