@@ -630,6 +630,7 @@ footer .top {
         position: absolute;
         right: 0;
         z-index: 2;
+        border: none;
     }
 
     .menu-icon,
@@ -933,6 +934,7 @@ footer .top {
         position: absolute;
         right: 0;
         z-index: 2;
+        border: none
     }
 
     .menu-icon,
