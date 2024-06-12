@@ -602,7 +602,7 @@ footer .top {
     nav ul {
         text-align: left;
         padding: 0px;
-        width: 100%;
+        width: 93%;
         z-index: -1;
     }
 
@@ -629,6 +629,7 @@ footer .top {
         background-color: transparent;
         position: absolute;
         right: 0;
+        z-index: 2;
     }
 
     .menu-icon,
@@ -744,7 +745,7 @@ footer .top {
     }
 
     #about-profile-container .about-profile-img {
-        width: 300px;
+        width: 275px;
         margin-top: 5px;
     }
 
@@ -892,3 +893,317 @@ footer .top {
         padding-top: 1rem;
     }
 }
+
+@media (min-width: 525px) and (max-width: 1245px) {
+    /***********************************       
+        MENU STYLE
+    *************************************/
+    header {
+        padding-bottom: 45px;
+    }
+
+    nav ul {
+        text-align: left;
+        padding: 0px;
+        width: 93%;
+        z-index: -1;
+    }
+
+    header li {
+        display: block;
+        margin: 0;
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+        margin: 1rem;
+    }
+
+    nav a:hover {
+        background-color: #fff;
+        color: #222;
+    }
+
+
+    .menu-button {
+        width: 48px;
+        height: 48px;
+        background-color: transparent;
+        position: absolute;
+        right: 0;
+        z-index: 2;
+    }
+
+    .menu-icon,
+    .menu-icon::before,
+    .menu-icon::after {
+        width: 40px;
+        height: 5px;
+        background-color: #fff;
+        position: absolute;
+        border-radius: 5px;
+    }
+
+    .menu-icon::before,
+    .menu-icon::after {
+        content: "";
+    }
+
+    .menu-icon::before {
+        transform: translate(-20px, -12px);
+    }
+
+    .menu-icon::after {
+        transform: translate(-20px, 12px);
+    }
+
+    .menu-button:hover .menu-icon {
+        background-color: transparent;
+        transform: rotate(720deg);
+    }
+
+    .menu-button:hover .menu-icon::before {
+        transform: translateX(-20px) rotate(45deg);
+    }
+
+    .menu-button:hover .menu-icon::after {
+        transform: translateX(-20px) rotate(-45deg);
+    }
+
+    header:hover nav {
+        display: block;
+    } 
+
+    nav {
+        display: none;
+        transform-origin: left left;
+        animation: showMenu 0.5s ease-in-out forwards;
+    }
+
+    @keyframes showMenu {
+        0% {
+            transform: scaleX(0);
+        }
+
+        80% {
+            transform: scaleX(1.2);
+        }
+
+        100% {
+            transform: scaleX(1);
+        }
+    } 
+
+    li.active .nav-des {
+        background-color: #000;
+        height: 0;
+        width: 0%;
+    }
+
+    nav .nav-des {
+        background-color: #000;
+        height: 0;
+        width: 0%;
+    }
+
+     /***********************************       
+         HOME SECTION
+    *************************************/
+    #home {
+        min-height: 80vh;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        z-index: -1;
+        width: 100%;
+    }
+
+    .home-background { 
+        min-height: 80vh;
+        padding-top: 20em;
+    }
+
+    
+     /***********************************       
+         ABOUT SECTION
+    *************************************/
+    #about {
+        border: none;
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        box-shadow: -2px -2px 4px #f4c5c5e3, 2px 2px 4px#f4c5c5e3;
+        scroll-margin-top: 10rem;
+    }
+
+    .about-profile {
+        float: none;
+        width: 100%;
+        margin-bottom: 1rem;
+        padding: 10px;
+    }
+
+    #about-profile-container {
+        display: block;
+    }
+
+    #about-profile-container .about-profile-img {
+        min-width: 500px;
+        margin-top: 5px;
+        margin: auto;
+    }
+
+    #about-profile-container .about-profile-text {
+        padding-top: 2rem;
+    }
+
+    .about-profile-txt {
+        padding-right: 2rem;
+    }
+
+    /***********************************       
+        RESUME SECTION
+    *************************************/
+    #resume {
+        margin: 70px 0;
+        width: 95%;
+        scroll-margin-top: 8rem;
+        padding-left: 20px;
+    }
+
+    #resume .intro {
+        font-size: 2rem; /*put a font*/
+    }
+
+    #resume .left {
+        padding-left: 0px;
+    }
+
+    #resume .left2 {
+        padding-left: 0px;
+        display: block;
+    }
+
+    .resume-box {
+        border: none;
+        width: 300px;
+        float: none;
+        padding: 10px;
+        padding-left: 3px;
+        margin: auto;
+    }
+
+    .resume-box h2 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .resume-header {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /***********************************       
+        SERVICES SECTION
+    *************************************/
+    #services-box-container {
+        margin: 30px auto;
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+        gap: 1.3rem;
+    }
+
+    .services-box { 
+        width: 400px;
+        margin: auto;
+        padding-bottom: 20px;
+    }
+
+    #services-experience-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 950px;
+    }
+
+    #services-experience-container .service-background {
+        height: 950px;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .services-experience-box { 
+        width: 250px;
+        float: none;
+        margin: auto;
+    }
+
+    /***********************************       
+       PROJECT SECTION
+    *************************************/
+    .project-container {
+        margin: 2rem auto;
+        width: 95%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+       padding-left: 10px;
+       padding-right: 10px;
+    }
+    
+    .project-item {
+        width: 400px;
+        margin-bottom: 0rem;
+        height: auto;
+    }
+    
+    .project-item img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+    
+    .project-container .two {
+        margin-left: 0;
+    }
+
+    /***********************************       
+        CONTACT SECTION
+    *************************************/
+    #contact .contact-bg {
+        background-color: rgb(240, 69, 12);
+        opacity: 0.9;
+        padding: 100px 20px 30px;
+    }
+
+    .contact-box {
+        padding-bottom: 30px;
+    }
+
+    .contact-form {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        padding-bottom: 20px;
+    }
+
+    .contact-form button {
+        padding: 10px;
+        border-radius: 40px;
+        background-color: rgb(240, 69, 12);
+        color: #fff;
+        font-size: 1.1rem;
+        border: none;
+        position: static;
+    }
+
+    .contact-text {
+        padding-top: 1rem;
+    }
+}
+
