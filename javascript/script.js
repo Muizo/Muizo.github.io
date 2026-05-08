@@ -23,3 +23,22 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 })
 
+//Smooth Scroll for Nav Links
+const links = document.querySelectorAll(`a[href^="#"`);
+
+links.forEach(link => {
+    link.addEventListener("click", (event) => {
+        const targetId = this.getAttribute("href");
+
+        if(targetId.length > 1) {
+            event.preventDefault();
+
+            const target = document.querySelector(targetId);
+            if(target) {
+                target.scrollIntoView({
+                    behavior: "smooth"
+                });
+            }
+        }
+    });
+});
